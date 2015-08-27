@@ -1,0 +1,14 @@
+{
+  "name": "web-mobile-test-app",
+  "version": "0.0.1",
+  "authors": [
+    "Ivan"
+  ],
+  "private": true,
+  "dependencies": {
+    "underscore": "*",
+    "jquery": "*",
+    "lodash": "*",
+	"ember": "*"
+  }
+}

@@ -1,0 +1,45 @@
+@baseTransitionTime: 2s;
+
+.some-on-click-animation{
+	.transition-property(background-color);//lesshat
+	.transition-duration(@baseTransitionTime + 1s);//lesshat
+    //transition-duration: @baseTransitionTime + 1s;
+}
+
+.some-on-hover-animation{
+	.transition-property(opacity);//lesshat
+	.transition-property(margin-left);//lesshat
+	.transition-duration(@baseTransitionTime);//lesshat
+    //transition-duration: @baseTransitionTime;
+}
+
+.some-on-hover-animation:hover{
+    opacity: 0.3;
+    margin-left:50px;
+}
+
+/*
+@keyframes go-left-right {
+    from {
+        left: 0px;
+    }
+    to {
+        left: calc(100% - 50px);
+    }
+}
+
+
+@-webkit-keyframes go-left-right {
+    from {
+        left: 0px;
+    }
+    to {
+        left: calc(100% - 50px);
+    }
+}
+
+.simple-div-size:hover{
+    animation: go-left-right 3s infinite alternate;
+    -webkit-animation: go-left-right 3s infinite alternate;
+}
+*/

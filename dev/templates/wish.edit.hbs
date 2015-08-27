@@ -1,0 +1,19 @@
+<!--{{#with}} helper allows us to change context for template between {{with}} and {{/with}}.-->
+
+<!--
+{{partial}} helper renders a template within its current context.
+This allows us to reuse the photo.form template on both photo.edit and photo.new
+-->
+
+{{#with controllers.item.content}}
+<form class="form-horizontal">
+    <fieldset>
+        <legend>Edit item</legend>
+        {{partial 'item.form'}}
+    </fieldset>
+</form>
+<div class="btn-group">
+    <button class="btn btn-large btn-primary" {{action 'update' this}}>Update</button>
+    <button class="btn btn-large btn-danger" {{action 'cancel' this}}>Cancel</button>
+</div>
+{{/with}}
