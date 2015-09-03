@@ -1,9 +1,47 @@
 'use strict'
 
-let ProductApp = require('app/ProductApp');
-let Ember = require('app/Ember');
+//let PrislonApp = require('app/PrislonApp');
+//let Ember = require('app/Ember');
 
-ProductApp.Model = Ember.Object.extend( Ember.Copyable, {
+window.PrislonApp.Product = Ember.Object.extend({
+    title : null,
+    description: null,
+    imageUrl: null
+});
+
+window.PrislonApp.Contacts = Ember.Object.extend({
+    head : null,
+    address : null,
+    yandexWidget: null
+});
+
+window.PrislonApp.About = Ember.Object.extend({
+    head : null,
+    mission : null,
+    gallery: null
+});
+
+//-----another example-----
+
+//reopenClass method allows you to add static methods to classes that were defined by extending Ember.Object.
+/*
+ App.People.reopenClass({
+    'planet': "Earth"
+ });
+ console.log(App.People.planet) // -> Earth
+*/
+
+//типа наследование
+//App.Person = Ember.Object.extend({ name: null })
+
+//механизм наследования от нескольких классов, тн Миксины
+//App.Person = Em.Object.extend([ App.Walks, App.Speaks ], { name: "John Doe" })
+
+//инстанс класса
+//var somePerson = App.Person.create({name: "John Doe"})
+
+/*
+PrislonApp.Model = Ember.Object.extend( Ember.Copyable, {
     init: function() {
         // make sure that class has a storageKey property, otherwise throw an error
         // storageKey is the key that's used in localStorage
@@ -16,6 +54,7 @@ ProductApp.Model = Ember.Object.extend( Ember.Copyable, {
             this.set( 'guid', guid() );
         }
     },
+
     // default guid
     guid: null,
     copy: function() {
@@ -31,36 +70,17 @@ ProductApp.Model = Ember.Object.extend( Ember.Copyable, {
     }
 });
 
-//reopenClass method allows you to add static methods to classes that were defined by extending Ember.Object.
-
-/*
- App.People.reopenClass({
- 'planet': "Earth"
- });
-
- console.log(App.People.planet) // -> Earth
-*/
-
-//типа наследование
-//App.Person = Ember.Object.extend({ name: null })
-
-//механизм наследования от нескольких классов, тн Миксины
-//App.Person = Em.Object.extend([ App.Walks, App.Speaks ], { name: "John Doe" })
-
-//инстанс класса
-//var somePerson = App.Person.create({name: "John Doe"})
-
 // add a class property ( aka static property )
-ProductApp.Model.reopenClass({
-    /**
-     * String name of the storage key for this model.
-     * This is only necessary because Ember has a bug that prevents proper class inspection when using modules
-     * TODO: convert Model to a class and remove storageKey after Ember class inspection is fixed.
-     */
+PrislonApp.Model.reopenClass({
+
+     //String name of the storage key for this model.
+     //This is only necessary because Ember has a bug that prevents proper class inspection when using modules
+     //TODO: convert Model to a class and remove storageKey after Ember class inspection is fixed.
+
     storageKey: null
 });
 
-ProductApp.Wish = ProductApp.Model.extend({
+PrislonApp.Wish = PrislonApp.Model.extend({
     image: null,
     title: '',
     description: '',
@@ -80,6 +100,7 @@ ProductApp.Wish = ProductApp.Model.extend({
 });
 
 // set storage key for this class of models
-ProductApp.Wish.reopenClass({
+PrislonApp.Wish.reopenClass({
     storageKey: 'wish'
 });
+*/

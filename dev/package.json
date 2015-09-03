@@ -12,14 +12,19 @@
     "browser-sync": "^2.8.2",
     "browserify": "^11.0.1",
     "del": "^1.2.1",
+    "ember-cli-htmlbars": "^1.0.0",
+    "ember-handlebars": "*",
+    "ember-template-compiler": "*",
     "event-stream": "*",
-	"gulp": "*",
+    "gulp": "*",
     "gulp-babel": "*",
     "gulp-batch": "^1.0.5",
     "gulp-bundle-assets": "^2.22.0",
     "gulp-cache": "*",
     "gulp-concat": "*",
     "gulp-declare": "*",
+    "gulp-ember-templates": "*",
+    "gulp-handlebars": "*",
     "gulp-imagemin": "*",
     "gulp-install": "*",
     "gulp-less": "*",
@@ -39,7 +44,6 @@
     "require-dir": "^0.3.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "*",
-    "watchify": "^3.3.1",
-	"gulp-handlebars":"*"
+    "watchify": "^3.3.1"
   }
 }

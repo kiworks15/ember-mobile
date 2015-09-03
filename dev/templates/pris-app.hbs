@@ -1,0 +1,17 @@
+rterterte
+
+{{render header}}
+
+
+<div id="mainArea">
+    {{outlet}}
+</div>
+
+Hello <b>{{PrislonApp.customField}}</b>
+
+{{#each PrislonApp.Products}}
+    <h3>{{title}}</h3>
+    <p>{{description}}</p>
+{{/each}}
+
+<h2>{{view PrislonApp.ReviewTextArea}}</h2>

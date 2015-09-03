@@ -1,6 +1,6 @@
 'use strict'
 
-exports.doSomething = function() { 
-	var a = 99;
-	return a;
- };
+//exports.doSomething = function() {
+//	var a = 99;
+//	return a;
+// };

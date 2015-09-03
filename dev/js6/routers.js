@@ -1,7 +1,7 @@
 'use strict'
 
-let ProductApp = require('app/ProductApp');
-
+//let ProductApp = require('app/PrislonApp');
+/*
 ProductApp.Router.map(function() {
     this.resource('main-menu', { path: '/' });
 
@@ -12,3 +12,4 @@ ProductApp.Router.map(function() {
         this.route('edit');
     });
 });
+    */

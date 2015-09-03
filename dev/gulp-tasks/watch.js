@@ -12,6 +12,10 @@ gulp.task('watch', function () {
         gulp.start('browserify', done);
     }));
 	
+	watch('./templates/**/*.hbs', batch(function (events, done) {
+        gulp.start('hdbtemplates', done);
+    }));
+	
 	//var bundler = watchify(source('./js6/app.js'));
 	//bundler.on('update', gulp.start('browserify', done)); //rebundle
 		

@@ -48,7 +48,7 @@ gulp.task('browserify', function() {
 	files = [
         ['./js6/app.js','scripts','../www/scripts'],
 		['./bower_components/ember/ember.prod','ember','../www/vendor'],
-		['./bower_components/jquery/dist/jquery.min.js','juery','../www/vendor'],
+		['./bower_components/jquery/dist/jquery.min.js','jquery.min','../www/vendor'],
 		['./bower_components/underscore/underscore-min.js','underscore','../www/vendor'],
 		['./bower_components/lodash/lodash.min.js','lodash','../www/vendor']
     ];	

@@ -9,6 +9,7 @@
     "underscore": "*",
     "jquery": "*",
     "lodash": "*",
-	"ember": "*"
+	"ember": "~1.13",
+	"handlebars":"*"
   }
 }
