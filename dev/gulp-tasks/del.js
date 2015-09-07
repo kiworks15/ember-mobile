@@ -1,4 +1,5 @@
 var del = require('del');
+var gulp = require('gulp');
  
 var cb = function (err, paths) {
 		console.log('Deleted files/folders:\n', paths.join('\n'));

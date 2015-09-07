@@ -1,9 +1,8 @@
 'use strict';
 
-//let PrislonApp = require('app/PrislonApp');
-//let Ember = require('app/Ember');
+var PrislonApp = require('PrislonApp');
 
-window.PrislonApp.Products = Ember.ArrayController.create({
+PrislonApp.Products = Ember.ArrayController.create({
     content:[],
     loadProducts: function(){
         let self = this;
@@ -12,6 +11,7 @@ window.PrislonApp.Products = Ember.ArrayController.create({
         )});
     }
 });
+
 /*
 window.PrislonApp.Products = Ember.ArrayController.create({
     content:[],

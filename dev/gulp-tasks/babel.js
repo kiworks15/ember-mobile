@@ -4,7 +4,7 @@ var sourcemaps = require('gulp-sourcemaps'),
 	gulp = require('gulp');
 
 gulp.task('babel', function() {
-	return gulp.src('./js6/**/*.js')
+	return gulp.src('./app/js/**/*.js')
 		.pipe(sourcemaps.init())
 		.pipe(babel())
 		.pipe(concat('scripts.js'))

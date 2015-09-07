@@ -1,8 +1,7 @@
 'use strict'
 
-//let ProductApp = require('app/PrislonApp');
-//let Ember = require('app/Ember');
-/*
+var ProductApp = require('PrislonApp');
+
 ProductApp.ApplicationRoute = Ember.Route.extend({
     actions: {
         goToNewWish: function () {
@@ -61,4 +60,3 @@ ProductApp.WishNewRoute = Ember.Route.extend({
         return ProductApp.Wish.create({});
     }
 });
-    */

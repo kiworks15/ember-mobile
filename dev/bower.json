@@ -8,8 +8,11 @@
   "dependencies": {
     "underscore": "*",
     "jquery": "*",
-    "lodash": "*",
-	"ember": "~1.13",
-	"handlebars":"*"
+	"ember": "*",
+	
+	"lodash": "*",
+	"gemini-scrollbar":"*",
+	"gemini-scrollup":"*",
+	"hammerjs":"*"
   }
 }

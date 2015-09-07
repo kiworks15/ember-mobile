@@ -1,7 +1,7 @@
 'use strict'
 
-//let ProductApp = require('app/PrislonApp');
-/*
+var ProductApp = require('PrislonApp');
+
 ProductApp.Router.map(function() {
     this.resource('main-menu', { path: '/' });
 
@@ -12,4 +12,9 @@ ProductApp.Router.map(function() {
         this.route('edit');
     });
 });
-    */
+
+/*
+var Router = Ember.Router.extend({
+    location: 'auto'
+});
+*/

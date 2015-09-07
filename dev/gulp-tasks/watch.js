@@ -8,11 +8,11 @@ gulp.task('watch', function () {
         gulp.start('less', done);
     }));
 	
-	watch('./js6/**/*.js', batch(function (events, done) {
+	watch('./app/js/**/*.js', batch(function (events, done) {
         gulp.start('browserify', done);
     }));
 	
-	watch('./templates/**/*.hbs', batch(function (events, done) {
+	watch('./app/templates/**/*.hbs', batch(function (events, done) {
         gulp.start('hdbtemplates', done);
     }));
 	

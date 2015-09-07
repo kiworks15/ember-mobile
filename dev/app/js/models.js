@@ -1,21 +1,20 @@
 'use strict'
 
-//let PrislonApp = require('app/PrislonApp');
-//let Ember = require('app/Ember');
+var PrislonApp = require('PrislonApp');
 
-window.PrislonApp.Product = Ember.Object.extend({
+PrislonApp.Product = Ember.Object.extend({
     title : null,
     description: null,
     imageUrl: null
 });
 
-window.PrislonApp.Contacts = Ember.Object.extend({
+PrislonApp.Contacts = Ember.Object.extend({
     head : null,
     address : null,
     yandexWidget: null
 });
 
-window.PrislonApp.About = Ember.Object.extend({
+PrislonApp.About = Ember.Object.extend({
     head : null,
     mission : null,
     gallery: null

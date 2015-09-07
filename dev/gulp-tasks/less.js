@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat');
 
 gulp.task('less', function() {
-	return gulp.src('./less/**/*.less')	
+	return gulp.src('./app/less/**/*.less')	
 		.pipe(less({
 		  //paths: [ './', './less', path.join('less', 'includes') ],
 		  plugins: [lesshat, autoprefix, cleancss]
